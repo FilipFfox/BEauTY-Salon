@@ -28,7 +28,7 @@ h3 {
     text-align: right;
     font-size: 1.3em;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    }
 a {
     color: rgb(211, 222, 222);
     text-decoration: none;
@@ -46,9 +46,51 @@ a:hover {
     align-items: center;
     gap: 10px;
 }
+
+.beat-item {
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+.b-thumbnail {
+    width: 15em;
+    position: relative;
+}
+
+.b-thumbnail::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transform: scale(0.9);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.beat-item:hover .b-thumbnail::before {
+    transform: scale(1);
+}
+
+.beat-item:hover .b-thumbnail {
+    transform: scale(1.1);
+}
+
 .beat-title {
     color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+    text-shadow: 1px 1px 2px white;
+    z-index: 2; /* Ustawienie wyższego indeksu z powodu nakładania tekstu nad pseudoelementem */
 }
-.b-thumbnail {
-    width: 12em;
-}
+
