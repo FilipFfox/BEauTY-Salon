@@ -1,6 +1,7 @@
 body {
     margin: 0;
     color: black;
+    background-color: rgb(232, 237, 234);
 }
 header {
     display: flex;
