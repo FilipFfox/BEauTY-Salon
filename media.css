@@ -1,0 +1,15 @@
+@media screen and (max-width: 850px){
+.section-container {
+    flex-direction: column;
+}
+header {
+    justify-content: center;
+    flex-direction: column;
+}
+.profil {
+    width: 100%;
+}
+h2 {
+    text-align: center;
+}
+    }
