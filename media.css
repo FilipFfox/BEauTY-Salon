@@ -12,4 +12,7 @@ header {
 h2 {
     text-align: center;
 }
+footer {
+    flex-direction: column;
+}
     }
