@@ -9,11 +9,12 @@
 <body>
     <main>
     <h1>Formularz kontaktowy</h1>
-    <form>
+    <form action="send_email.php" method="post" >
         Imię/Pseudonim: <input required type="text" name="name" placeholder="Imię">
         E-mail: <input required type="email" name="email" placeholder="example@xyz.com">
-        Temat: <input required type="subject" name="subject" placeholder="Temat">
+        Temat: <input required type="text" name="subject" placeholder="Temat">
         Treść: <textarea required name="content" rows="15" cols="30" placeholder="Napisz to co chcesz mi przekazać"></textarea>
+        <button type="submit">Wyślij</button>
     </form>
 </main>
 </body>
