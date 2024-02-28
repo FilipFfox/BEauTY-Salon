@@ -4,11 +4,13 @@ body {
 }
 main {
     background-color: whitesmoke;
-    margin: auto 35%;
     border-radius: 10px;
     border: groove 5px rgb(120,120,120);
     padding: 15px;
     box-shadow: 3px 4px 5px rgb(180,180,180);
+    height: 90%;
+    width: 30%;
+    margin: 1em auto;
 }
 h1 {
     text-align: center;
