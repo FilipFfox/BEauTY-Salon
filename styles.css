@@ -33,6 +33,7 @@ h3 {
 a {
     color: rgb(211, 222, 222);
     text-decoration: none;
+    cursor: pointer;
 }
 a:hover {
     color: #999;

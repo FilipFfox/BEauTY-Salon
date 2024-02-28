@@ -4,17 +4,29 @@ body {
 }
 main {
     background-color: whitesmoke;
-    margin: auto 30%;
+    margin: auto 35%;
     border-radius: 10px;
     border: groove 5px rgb(120,120,120);
     padding: 15px;
+    box-shadow: 3px 4px 5px rgb(180,180,180);
 }
 h1 {
     text-align: center;
+    color: whitesmoke;
+    font-size: 2.5em;
 }
 form {
     display: flex;
     flex-direction: column;
     align-items: first baseline;
     gap: 15px;
+}
+button {
+    align-self: center;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    width: 5em;
+    height: 2em;
+    cursor: pointer;
 }
